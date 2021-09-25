@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Eight Bit";
+    src: url("../fonts/eight_bit-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("../fonts/nexa_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url("../fonts/nexa_light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.eight-bit {
+    font-family: "Eight Bit";
+}
+
+.nexa-bold {
+    font-family: "Nexa Bold";
+}
+
+.nexa-light {
+    font-family: "Nexa Light";
+}
+
+.orchid {
+    color: #e070ca !important;
+}
+
+.fuchsia {
+    color: #ff00ff !important;
+}
+
+.porcelain {
+    color: #ecf0f1 !important;
+}
+
+.cararra {
+    color: #f2f1ef !important;
+}
+
+.medium-purple {
+    color: #7f4ee3 !important;
+}
+
+.header {
+    padding-top: 8rem;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.bg-gradient-purple {
+    background: #834d9b;
+    background: -webkit-linear-gradient(to left, #7f4ee3, #834d9b);
+    background: linear-gradient(to left, #7f4ee3, #834d9b);
+}
+
+.bg-glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	text-decoration: none;
+	border-radius: 30px;
+	background-color: #0092ff;
+	border: 1px solid #0092ff;
+	color: #ffffff;
+	font-size: 0.875rem;
+	line-height: 0;
+	transition: all 0.2s;
+	font-weight: 600;
+    text-transform: uppercase;
+}
+
+.rotate-45a {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg);
+}
+
+.rotate-neg-45a {
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    transform: rotate(-45deg);
+}
+
+.btn-glass-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	text-decoration: none;
+	border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+	line-height: 0;
+    cursor: pointer;
+	transition: all 0.2s;
+    text-transform: uppercase;
+    backdrop-filter: blur(30px);
+    letter-spacing: 2px;
+}
+
+.fancy-border-1 {
+    border-radius: 30% 70% 67% 33% / 26% 61% 39% 74%;
+}
+
+.btn-glass-lg:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+	text-decoration: none;
+}
+
+.glass-button {
+    display: inline-block;
+    padding: 24px 32px;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    backdrop-filter: blur(30px);
+    letter-spacing: 2px;
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #0092ff; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+}
+
+.bg-header-voxels {
+    background-image: url("../images/header-voxels.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.gradient-animation {
+    background: linear-gradient(270deg, #e070ca, #7f4ee3, #ff00ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: GradientAnimation 30s ease infinite;
+    -moz-animation: GradientAnimation 30s ease infinite;
+    -o-animation: GradientAnimation 30s ease infinite;
+    animation: GradientAnimation 30s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-moz-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-o-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
