@@ -7,31 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orang Voxels</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/main.css">
 </head>
 
 <body class="bg-gradient-purple">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container bg-glass">
-            <!-- <a class="navbar-brand" href="#">
-                <span class="navbar-brand h1 eight-bit text-white">ORANGVOXELS</span>
-            </a> -->
-
             <a class="navbar-brand" href="#">
-                <img src="public/images/ov-logo.png" width="30" height="30" alt="">
+                <img src="public/images/ov-logo.webp" onerror="this.onerror=null; this.src='public/images/ov-logo.png'" width="30" height="30" alt="">
             </a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link text-white nexa-light" href="#header">About</a>
+                        <a class="nav-link text-white nexa-light" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white nexa-light" href="#roadmap">Roadmap</a>
@@ -47,48 +41,41 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <header id="header" class="header">
+    <header id="about" class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-5 d-flex align-items-center">
                     <div class="">
                         <p class="nexa-bold h1 text-white">Meet OrangVoxels</p>
-                        <p class="nexa-light h5 cararra">OrangVoxels is a population of voxel citizens as NFT living in
-                            the Binance Smart Chain.</p>
-                        <!-- <a class="glass-button" href="#services">Offered services</a> -->
-                        <!-- <a class="btn-solid-lg" href="#services">Offered services</a> -->
-                        <a class="btn-glass-lg mt-5" href="#services">
-                            Get It Here!
-                        </a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                        <p class="nexa-light h5 cararra">OrangVoxels is a population of voxel citizens as NFT living in the Binance Smart Chain.</p>
+                        <a class="btn-glass-lg mt-5" href="https://app.pentas.io/user/0x1747c5d4f79f6faaa4409a3d51abfe5741fd1538" target="_blank">Get It Here!</a>
+                    </div>
+                </div>
                 <div class="col-lg-6 col-xl-7 d-flex justify-content-center">
                     <div class="rotate-45 mt-5">
                         <div class="d-flex mb-3">
                             <div class="bg-glass mx-3" style="height: 200px; width: 200px;">
-                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-1.png" alt="">
+                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-1.webp" onerror="this.onerror=null; this.src='public/images/ov-display-1.png'" alt="">
                             </div>
                             <div class="bg-glass" style="height: 200px; width: 200px;">
-                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-2.png" alt="">
+                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-2.webp" onerror="this.onerror=null; this.src='public/images/ov-display-2.png'" alt="">
                             </div>
                         </div>
                         <div class="d-flex">
                             <div class="bg-glass mx-3" style="height: 200px; width: 200px;">
-                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-3.png" alt="">
+                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-3.webp" onerror="this.onerror=null; this.src='public/images/ov-display-3.png'" alt="">
                             </div>
                             <div class="bg-glass" style="height: 200px; width: 200px;">
-                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-4.png" alt="">
+                                <img class="img-fluid rotate-neg-45" src="public/images/ov-display-4.webp" onerror="this.onerror=null; this.src='public/images/ov-display-4.png'" alt="">
                             </div>
                         </div>
                     </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div id="roadmap">
+    <div id="roadmap" class="mb-5">
         <div class="container mt-5">
             <div class="separator">
                 <div class="line"></div>
@@ -97,76 +84,209 @@
             </div>
         </div>
 
-        <div class="container bg-glass mt-5">
+        <div class="container mt-5">
             <div class="timeline">
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-content">
-                        <h2>2017</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Birth of Orang Voxels</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-content">
-                        <h2>2016</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-content">
-                        <h2>2015</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-content">
-                        <h2>2012</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-content">
-                        <h2>2011</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-content">
-                        <h2>2007</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
+
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-1.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="timeline-container timeline-left">
-                    <div class="card">
-                        <div class="card-header">
-                            Featured
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="row py-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-15.jpg" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Our first launched!</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-container timeline-right">
-                    <div class="card border job-card-content box-shadow-1 rounded-2 bg-white py-2 px-3 py-md-3 px-md-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Create downloadable special digital certificate for first ownership</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-10.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-14.jpg" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Increase voxel density from 40x40x40 to 256x256x256 for #0021 - #0026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Increase the native image size of output by almost 3 times for #0013 - #XXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-6.png" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Introducing perks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Developing our voxels characters design to enable rigging in 3D software such as Blender, Cinema4D, Roblox Studio, Unity, Unreal Engine and more</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-7.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-8.png" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Supports others small NFT creator that have potential</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Create website and discord group for OrangVoxels community</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-3.jpg" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Create giveaway (on planning)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Introducing "voxelverse" plan</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-11.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-12.jpg" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">3D gallery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pb-5">
+                    <div class="col-6">
+                        <div class="bg-glass p-4 roadmap-card-body d-flex align-items-center">
+                            <p class="text-white h5 nexa-light">Toward to metaverse concept and idea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-13.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <div class="p-4 d-flex justify-content-center">
+                        <p class="text-white h5 nexa-light">ENDLESS POSSIBILITIES AHEAD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="perks" class="mb-5">
+        <div class="container mt-5">
+            <div class="separator">
+                <div class="line"></div>
+                <p class="nexa-light h2 text-white separator-text">Perks</p>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card bg-glass text-center">
+                        <img class="card-img-top rounded-top-3 img-perks-height" src="public/images/digital-certificate.png" alt="">
+                        <div class="card-body perks-card-body align-items-center justify-content-center d-flex">
+                            <p class="card-text text-white h4 nexa-light">Special downloadable digital certificates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card bg-glass text-center">
+                        <img class="card-img-top rounded-top-3 img-perks-height" src="public/images/unknown-tpose.png" alt="">
+                        <div class="card-body perks-card-body align-items-center justify-content-center d-flex">
+                            <p class="card-text text-white h4 nexa-light">Downloadable 3D model objects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card bg-glass text-center">
+                        <img class="card-img-top rounded-top-3 img-perks-height" src="public/images/unknown-spose.png" alt="">
+                        <div class="card-body perks-card-body align-items-center justify-content-center d-flex">
+                            <p class="card-text text-white h4 nexa-light">More valuable perks</p>
                         </div>
                     </div>
                 </div>
@@ -174,79 +294,61 @@
         </div>
     </div>
 
-    <div class="container-fluid gradient-animation" style="height: 100vh">
-        <div class="row align-items-center h-100 py-5">
-            <div class="col-6 mx-auto">
-                <div class="bg-glass p-5 rounded text-center">
-                    <!-- <p>about us</p>
-                    <p>OrangVoxels is a population of voxel citizens<br>as NFT living in the Binance Smart Chain.</p>
-                    <span class="navbar-brand mb-0 h1 text-white eight-bit">ORANGVOXELS</span>
-                    <span class="navbar-brand mb-0 h1 text-white nexa-bold">ORANGVOXELS</span>
-                    <span class="navbar-brand mb-0 h1 text-white nexa-light">ORANGVOXELS</span> -->
+    <div id="find-us" class="mb-5">
+        <div class="container mt-5">
+            <div class="separator">
+                <div class="line"></div>
+                <p class="nexa-light h2 text-white separator-text">Find Us</p>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-glass">
+                        <div class="card-body my-5">
+                            <div class="d-flex justify-content-around">
+                                <a href="https://twitter.com/OrangVoxels" target="_blank" class="text-white h5 no-decoration text-center">
+                                    <img src="public/images/logo/twitter.png" class="img-fluid" style="height: 40px;" alt="">
+                                    <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
+                                </a>
+
+                                <a href="https://discord.com/invite/SY6By9kWcK" target="_blank" class="text-white h5 no-decoration text-center">
+                                    <img src="public/images/logo/discord.png" class="img-fluid" style="height: 40px;" alt="">
+                                    <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
+                                </a>
+
+                                <a href="https://app.pentas.io/user/0x1747c5d4f79f6faaa4409a3d51abfe5741fd1538" target="_blank" class="text-white h5 no-decoration text-center">
+                                    <img src="public/images/logo/pentas.png" class="img-fluid" style="height: 40px;" alt="">
+                                    <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
+                                </a>
+
+                                <a href="https://www.instagram.com/orangvoxels/" target="_blank" class="text-white h5 no-decoration text-center">
+                                    <img src="public/images/logo/instagram.png" class="img-fluid" style="height: 40px;" alt="">
+                                    <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
+                                </a>
+
+                                <a href="https://www.tiktok.com/@simvisuals?lang=en" target="_blank" class="text-white h5 no-decoration text-center">
+                                    <img src="public/images/logo/tiktok.png" class="img-fluid" style="height: 40px;" alt="">
+                                    <p class="m-0 mt-3 text-white h5 nexa-light">@simvisuals</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row py-5">
-            <div class="col-12 text-center">
-                <p>ROADMAP</p>
-            </div>
-
-            <div class="col-12">
-                <div class="container bg-primary text-center" style="height: 90vh;">
-                    roadmap img here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-info">
-        <div class="row py-5">
-            <div class="col-12">
-                <p class="text-center">OWNER PERKS</p>
-                <div class="d-flex justify-content-center">
-                    <ul>
-                        <li>
-                            special downloadable digital certificates
-                        </li>
-                        <li>
-                            downloadable 3D model objects
-                        </li>
-                        <li>
-                            and more valuable perks
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row py-5">
-            <div class="col-12 text-center">
-                <p>find us on</p>
-            </div>
-            <div class="col-12">
-                <div class="d-flex justify-content-around">
-                    <div>@orangvoxels</div>
-                    <div>coming soon</div>
-                    <div>@orangvoxels</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container-fluid bg-info py-4">
-            <p class="m-0">(c) 2021 orangvoxels. All right reserved.</p>
+    <footer class="bg-glass-empty">
+        <div class="container py-3 text-center">
+            <p class="m-0 text-white nexa-light">(c) 2021 OrangVoxels. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="public/js/main.js"></script>
 </body>
 

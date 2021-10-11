@@ -72,6 +72,13 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.bg-glass-empty {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .btn-solid-lg {
     display: inline-block;
     padding: 1.625rem 2.625rem 1.625rem 2.625rem;
@@ -127,6 +134,10 @@
     text-transform: uppercase;
     backdrop-filter: blur(30px);
     letter-spacing: 2px;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
 
 .fancy-border-1 {
@@ -359,6 +370,35 @@
 
 .rounded-2 {
     border-radius: .5rem !important;
+}
+
+.rounded-top-3 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rounded-left-3 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img-perks-height {
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-roadmap-height {
+    height: 100px;
+    object-fit: cover;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.obj-cover {
+    object-fit: cover;
 }
 
 .box-shadow-1, .box-shadow-2 {
