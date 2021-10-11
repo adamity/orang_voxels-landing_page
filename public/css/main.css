@@ -197,6 +197,26 @@
     animation: GradientAnimation 30s ease infinite;
 }
 
+.scroller, .fc-scroller {
+    overflow-y: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.5) #7f4ee3;
+    scrollbar-width: thin;
+}
+
+.scroller::-webkit-scrollbar, .fc-scroller::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(255, 255, 255, 0.5); /* or add it to the track */
+}
+
+.scroller::-webkit-scrollbar-thumb, .fc-scroller::-webkit-scrollbar-thumb {
+    background: #7f4ee3;
+}
+
+.scrollable-menu {
+    height: auto;
+    overflow-x: hidden;
+}
+
 @-webkit-keyframes GradientAnimation {
     0% {
         background-position: 0% 50%;
