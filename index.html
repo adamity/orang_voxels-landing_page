@@ -19,11 +19,11 @@
                 <img src="public/images/logo/ov-logo.webp" onerror="this.onerror=null; this.src='public/images/logo/ov-logo.png'" width="30" height="30" alt="">
             </a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <button class="navbar-toggler p-0 border-0" type="button" id="sidenav-mobile" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <div class="navbar-collapse offcanvas-collapse d-none d-md-block" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link text-white nexa-light" href="#about">About</a>
@@ -42,18 +42,32 @@
         </div>
     </nav>
 
+    <div class="bg-sidenav"></div>
+
+    <div class="sidenav-responsive d-block d-md-none">
+        <div class="w-100 mt-3 mb-5 d-flex align-items-center justify-content-center">
+            <img src="public/images/logo/ov-logo.webp" class="mr-2" onerror="this.onerror=null; this.src='public/images/logo/ov-logo.png'" width="30" height="30" alt="">
+            <p class="nexa-light h5 text-white m-0 mx-2">IT'S OV!</p>
+        </div>
+        <a class="nav-link text-white nexa-light sidenav-menu" href="#about">About</a>
+        <a class="nav-link text-white nexa-light sidenav-menu" href="#roadmap">Roadmap</a>
+        <a class="nav-link text-white nexa-light sidenav-menu" href="#perks">Perks</a>
+        <a class="nav-link text-white nexa-light sidenav-menu" href="#find-us">Find Us</a>
+    </div>
+
     <header id="about" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5 d-flex align-items-center">
-                    <div class="">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 col-md-6 d-flex align-items-center h-100">
+                    <div>
                         <p class="nexa-bold h1 text-white">Meet OrangVoxels</p>
                         <p class="nexa-light h5 cararra">OrangVoxels is a population of voxel citizens as NFT living in the Binance Smart Chain.</p>
                         <a class="btn-glass-lg mt-5" href="https://app.pentas.io/user/0x1747c5d4f79f6faaa4409a3d51abfe5741fd1538" target="_blank" rel="noreferrer">Get It Here!</a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-7 d-flex justify-content-center">
-                    <div class="rotate-45 mt-5">
+
+                <div class="col-6 d-flex justify-content-center">
+                    <div class="rotate-45 mt-5 d-none d-md-block">
                         <div class="d-flex mb-3">
                             <div class="bg-glass mx-3" style="height: 200px; width: 200px;">
                                 <img class="img-fluid rotate-neg-45" src="public/images/display/ov-display-1.webp" onerror="this.onerror=null; this.src='public/images/display/ov-display-1.png'" alt="">
@@ -87,8 +101,8 @@
 
         <div class="container mt-5">
             <div class="timeline">
-                <div class="row py-3">
-                    <div class="col-6">
+                <div class="row py-1 py-md-3">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">02 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Birth of Orang Voxels</p>
@@ -96,16 +110,24 @@
                     </div>
 
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-1.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-1.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-1.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-1.jpg'" alt="">
                     </div>
                 </div>
 
-                <div class="row py-3">
+                <div class="row d-block d-md-none">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3">
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-15.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-15.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-15.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-15.jpg'" alt="">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">03 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Our first launched!</p>
@@ -113,8 +135,16 @@
                     </div>
                 </div>
 
-                <div class="row py-3">
-                    <div class="col-6">
+                <div class="row d-block d-md-none">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">04 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Create downloadable special digital certificate for first ownership</p>
@@ -122,16 +152,24 @@
                     </div>
 
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-10.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-10.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-10.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-10.jpg'" alt="">
                     </div>
                 </div>
 
-                <div class="row py-3">
+                <div class="row d-block d-md-none">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3">
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-14.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-14.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-14.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-14.jpg'" alt="">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">05 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Increase the native image size of output by almost 3 times for #0013 - #XXXX</p>
@@ -139,8 +177,22 @@
                     </div>
                 </div>
 
-                <div class="row py-3">
-                    <div class="col-6">
+                <div class="row d-block d-md-none">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-block d-md-none">
+                    <div class="col-12 text-center">
+                        <a class="btn-glass-lg" id="see-more-roadmap" href="">See More</a>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">07 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Increase voxel density from 40x40x40 to 256x256x256 for #0021 - #0026</p>
@@ -148,16 +200,24 @@
                     </div>
 
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-5.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-5.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-5.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-5.jpg'" alt="">
                     </div>
                 </div>
 
-                <div class="row py-3">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-6.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-6.png'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-6.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-6.png'" alt="">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">10 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Introducing perks</p>
@@ -165,8 +225,16 @@
                     </div>
                 </div>
 
-                <div class="row py-3">
-                    <div class="col-6">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">10 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Supports others small NFT creator that have potential</p>
@@ -174,16 +242,24 @@
                     </div>
 
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-7.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-7.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-7.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-7.jpg'" alt="">
                     </div>
                 </div>
 
-                <div class="row py-3">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-8.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-8.png'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-8.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-8.png'" alt="">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">15 September 2021</p>
                             <p class="text-white h5 nexa-light m-0">Developing our voxels characters design to enable rigging in 3D software such as Blender, Cinema4D, Roblox Studio, Unity, Unreal Engine and more</p>
@@ -191,8 +267,16 @@
                     </div>
                 </div>
 
-                <div class="row py-3">
-                    <div class="col-6">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">In Development</p>
                             <p class="text-white h5 nexa-light m-0">Create website and discord group for OrangVoxels community</p>
@@ -200,16 +284,24 @@
                     </div>
 
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-2.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-2.png'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-2.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-2.png'" alt="">
                     </div>
                 </div>
 
-                <div class="row py-3">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-3.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-3.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-3.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-3.jpg'" alt="">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-bold">On Planning</p>
                             <p class="text-white h5 nexa-light m-0">Create giveaway (on planning)</p>
@@ -217,52 +309,92 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column my-4">
-                    <p class="nexa-light text-white m-0">VERIFIED ON PENTAS.IO THRESHOLD</p>
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column my-4 see-more-roadmap">
+                    <p class="nexa-light text-white text-md-start text-center m-0">VERIFIED ON PENTAS.IO THRESHOLD</p>
                     <hr class="text-white m-0">
                 </div>
 
-                <div class="row py-3">
-                    <div class="col-6">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-light m-0">Introducing "voxelverse" plan</p>
                         </div>
                     </div>
 
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-11.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-11.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-11.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-11.jpg'" alt="">
                     </div>
                 </div>
 
-                <div class="row py-3">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-1 py-md-3 see-more-roadmap">
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-12.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-12.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-12.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-12.jpg'" alt="">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-light m-0">3D gallery</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row pt-3 pb-5">
-                    <div class="col-6">
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-1 pt-md-3 pb-1 pb-md-5 see-more-roadmap">
+                    <div class="col-12 col-md-6">
                         <div class="bg-glass p-4 roadmap-card-body d-flex justify-content-center flex-column">
                             <p class="text-white h5 nexa-light m-0">Toward to metaverse concept and idea</p>
                         </div>
                     </div>
                     
                     <div class="col-6">
-                        <img class="img-fluid rounded roadmap-card-img obj-cover" src="public/images/ov_heads/ov-heads-13.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-13.jpg'" alt="">
+                        <img class="img-fluid rounded roadmap-card-img obj-cover d-none d-md-block" src="public/images/ov_heads/ov-heads-13.webp" onerror="this.onerror=null; this.src='public/images/ov_heads/ov-heads-13.jpg'" alt="">
+                    </div>
+                </div>
+
+                <div class="row d-block d-md-none see-more-roadmap">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-white py-4 width-2"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6 offset-3">
+            <div class="row see-more-roadmap">
+                <div class="col-12">
                     <div class="p-4 d-flex justify-content-center">
-                        <p class="text-white h5 nexa-light">ENDLESS POSSIBILITIES AHEAD</p>
+                        <p class="text-white text-center h5 nexa-light">ENDLESS POSSIBILITIES AHEAD</p>
                     </div>
                 </div>
             </div>
@@ -278,9 +410,9 @@
             </div>
         </div>
 
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-4">
+        <div class="container mt-5 mt-md-0">
+            <div class="d-flex flex-nowrap flex-md-wrap overflow-auto mb-5 p-lg-5">
+                <div class="col-9 col-md-4 px-md-2">
                     <div class="card bg-glass text-center">
                         <img class="card-img-top rounded-top-3 img-perks-height" src="public/images/perks/digital-certificate.webp" onerror="this.onerror=null; this.src='public/images/perks/digital-certificate.png'" alt="">
                         <div class="card-body perks-card-body align-items-center justify-content-center d-flex">
@@ -289,7 +421,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-9 col-md-4 px-md-2 mx-4 mx-md-auto">
                     <div class="card bg-glass text-center">
                         <img class="card-img-top rounded-top-3 img-perks-height" src="public/images/perks/unknown-tpose.webp" onerror="this.onerror=null; this.src='public/images/perks/unknown-tpose.png'" alt="">
                         <div class="card-body perks-card-body align-items-center justify-content-center d-flex">
@@ -298,7 +430,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-9 col-md-4 px-md-2">
                     <div class="card bg-glass text-center">
                         <img class="card-img-top rounded-top-3 img-perks-height" src="public/images/perks/unknown-spose.webp" onerror="this.onerror=null; this.src='public/images/perks/unknown-spose.png'" alt="">
                         <div class="card-body perks-card-body align-items-center justify-content-center d-flex">
@@ -324,31 +456,71 @@
                 <div class="col-12">
                     <div class="card bg-glass">
                         <div class="card-body my-5">
-                            <div class="d-flex justify-content-around">
-                                <a href="https://twitter.com/OrangVoxels" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
-                                    <img src="public/images/logo/twitter.webp" onerror="this.onerror=null; this.src='public/images/logo/twitter.png'" class="img-fluid" style="height: 40px;" alt="">
-                                    <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
-                                </a>
+                            <div class="d-block d-md-none">
+                                <div class="row">
+                                    <div class="col-6 text-center pb-5">
+                                        <a href="https://twitter.com/OrangVoxels" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                            <img src="public/images/logo/twitter.webp" onerror="this.onerror=null; this.src='public/images/logo/twitter.png'" class="img-fluid" style="height: 40px;" alt="">
+                                            <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
+                                        </a>
+                                    </div>
 
-                                <a href="https://discord.com/invite/SY6By9kWcK" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
-                                    <img src="public/images/logo/discord.webp" onerror="this.onerror=null; this.src='public/images/logo/discord.png'" class="img-fluid" style="height: 40px;" alt="">
-                                    <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
-                                </a>
+                                    <div class="col-6 text-center pb-5">
+                                        <a href="https://discord.com/invite/SY6By9kWcK" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                            <img src="public/images/logo/discord.webp" onerror="this.onerror=null; this.src='public/images/logo/discord.png'" class="img-fluid" style="height: 40px;" alt="">
+                                            <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
+                                        </a>
+                                    </div>
 
-                                <a href="https://app.pentas.io/user/0x1747c5d4f79f6faaa4409a3d51abfe5741fd1538" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
-                                    <img src="public/images/logo/pentas.webp" onerror="this.onerror=null; this.src='public/images/logo/pentas.png'" class="img-fluid" style="height: 40px;" alt="">
-                                    <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
-                                </a>
+                                    <div class="col-6 text-center pb-5">
+                                        <a href="https://www.instagram.com/orangvoxels/" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                            <img src="public/images/logo/instagram.webp" onerror="this.onerror=null; this.src='public/images/logo/instagram.png'" class="img-fluid" style="height: 40px;" alt="">
+                                            <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
+                                        </a>
+                                    </div>
 
-                                <a href="https://www.instagram.com/orangvoxels/" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
-                                    <img src="public/images/logo/instagram.webp" onerror="this.onerror=null; this.src='public/images/logo/instagram.png'" class="img-fluid" style="height: 40px;" alt="">
-                                    <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
-                                </a>
+                                    <div class="col-6 text-center pb-5">
+                                        <a href="https://www.tiktok.com/@simvisuals?lang=en" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                            <img src="public/images/logo/tiktok.webp" onerror="this.onerror=null; this.src='public/images/logo/tiktok.png'" class="img-fluid" style="height: 40px;" alt="">
+                                            <p class="m-0 mt-3 text-white h5 nexa-light">@simvisuals</p>
+                                        </a>
+                                    </div>
 
-                                <a href="https://www.tiktok.com/@simvisuals?lang=en" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
-                                    <img src="public/images/logo/tiktok.webp" onerror="this.onerror=null; this.src='public/images/logo/tiktok.png'" class="img-fluid" style="height: 40px;" alt="">
-                                    <p class="m-0 mt-3 text-white h5 nexa-light">@simvisuals</p>
-                                </a>
+                                    <div class="col-6 offset-3 text-center">
+                                        <a href="https://app.pentas.io/user/0x1747c5d4f79f6faaa4409a3d51abfe5741fd1538" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                            <img src="public/images/logo/pentas.webp" onerror="this.onerror=null; this.src='public/images/logo/pentas.png'" class="img-fluid" style="height: 40px;" alt="">
+                                            <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block">
+                                <div class="d-flex justify-content-around">
+                                    <a href="https://twitter.com/OrangVoxels" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                        <img src="public/images/logo/twitter.webp" onerror="this.onerror=null; this.src='public/images/logo/twitter.png'" class="img-fluid" style="height: 40px;" alt="">
+                                        <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
+                                    </a>
+    
+                                    <a href="https://discord.com/invite/SY6By9kWcK" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                        <img src="public/images/logo/discord.webp" onerror="this.onerror=null; this.src='public/images/logo/discord.png'" class="img-fluid" style="height: 40px;" alt="">
+                                        <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
+                                    </a>
+    
+                                    <a href="https://app.pentas.io/user/0x1747c5d4f79f6faaa4409a3d51abfe5741fd1538" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                        <img src="public/images/logo/pentas.webp" onerror="this.onerror=null; this.src='public/images/logo/pentas.png'" class="img-fluid" style="height: 40px;" alt="">
+                                        <p class="m-0 mt-3 text-white h5 nexa-light">@OrangVoxels</p>
+                                    </a>
+    
+                                    <a href="https://www.instagram.com/orangvoxels/" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                        <img src="public/images/logo/instagram.webp" onerror="this.onerror=null; this.src='public/images/logo/instagram.png'" class="img-fluid" style="height: 40px;" alt="">
+                                        <p class="m-0 mt-3 text-white h5 nexa-light">@orangvoxels</p>
+                                    </a>
+    
+                                    <a href="https://www.tiktok.com/@simvisuals?lang=en" target="_blank" class="text-white h5 no-decoration text-center" rel="noreferrer">
+                                        <img src="public/images/logo/tiktok.webp" onerror="this.onerror=null; this.src='public/images/logo/tiktok.png'" class="img-fluid" style="height: 40px;" alt="">
+                                        <p class="m-0 mt-3 text-white h5 nexa-light">@simvisuals</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
